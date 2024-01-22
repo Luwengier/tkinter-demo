@@ -15,4 +15,16 @@ def add(*args) -> None:
         print(n)
 
 
+class Car:
+    def __init__(self, **kw):
+        self.make = kw.get("make")
+        self.model = kw.get("model")
+        self.colour = kw.get("colour")
+
+
+my_car = Car(make="Nissan")
+print(my_car.make)
+print(my_car.model)
+
+
 window.mainloop()
